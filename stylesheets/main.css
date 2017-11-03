@@ -84,7 +84,7 @@ a:hover {
   display: block;
   width: 30px;
   height: 10px;
-  background: url("../science/images/arrow.png") no-repeat;
+  background: url("../images/arrow.png") no-repeat;
 }
 
 /* line 29, ../sass/partials/_base.scss */
@@ -166,29 +166,35 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* line 105, ../sass/partials/_base.scss */
+.article-image img {
+  width: 100%;
+  min-width: 140px;
+}
+
 @media (min-width: 440px) {
-  /* line 106, ../sass/partials/_base.scss */
+  /* line 113, ../sass/partials/_base.scss */
   .right-side .article {
     flex-direction: row;
   }
-  /* line 109, ../sass/partials/_base.scss */
+  /* line 116, ../sass/partials/_base.scss */
   .right-side .article-image {
     margin-right: 20px;
   }
 }
 @media (min-width: 600px) {
-  /* line 116, ../sass/partials/_base.scss */
+  /* line 123, ../sass/partials/_base.scss */
   .articles {
     flex-direction: row;
   }
 
-  /* line 119, ../sass/partials/_base.scss */
+  /* line 126, ../sass/partials/_base.scss */
   .left-side {
     position: relative;
     padding: 18px 27px 18px 12px;
     width: 35%;
   }
-  /* line 124, ../sass/partials/_base.scss */
+  /* line 131, ../sass/partials/_base.scss */
   .left-side:before {
     content: "";
     position: absolute;
@@ -199,22 +205,22 @@ a:hover {
     border-right: 1px solid #eeeefb;
   }
 
-  /* line 135, ../sass/partials/_base.scss */
+  /* line 142, ../sass/partials/_base.scss */
   .right-side {
     padding: 0 5px 0 15px;
     width: 65%;
   }
 
-  /* line 140, ../sass/partials/_base.scss */
+  /* line 147, ../sass/partials/_base.scss */
   .intro {
     padding: 0;
   }
-  /* line 142, ../sass/partials/_base.scss */
+  /* line 149, ../sass/partials/_base.scss */
   .intro .intro-image {
     display: block;
   }
 
-  /* line 147, ../sass/partials/_base.scss */
+  /* line 154, ../sass/partials/_base.scss */
   .section-title {
     margin-left: -45px;
   }
@@ -282,7 +288,7 @@ a:hover {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background: url("../science/images/icon.png") no-repeat;
+    background: url("../images/icon.png") no-repeat;
   }
 }
 /* line 1, ../sass/partials/_footer.scss */
