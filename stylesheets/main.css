@@ -1,0 +1,293 @@
+/* line 3, ../sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, ../sass/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* line 28, ../sass/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, ../sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+* main styles
+*/
+/* line 5, ../sass/partials/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+p {
+  margin-bottom: 15px;
+  font: 400 10px/14px "Tahoma", sans-serif;
+  color: #093500;
+}
+
+/* line 15, ../sass/partials/_base.scss */
+a {
+  text-decoration: none;
+}
+/* line 17, ../sass/partials/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 22, ../sass/partials/_base.scss */
+.read-more {
+  display: block;
+  width: 30px;
+  height: 10px;
+  background: url("../images/arrow.png") no-repeat;
+}
+
+/* line 29, ../sass/partials/_base.scss */
+.wrapper {
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+/* line 34, ../sass/partials/_base.scss */
+.intro {
+  display: flex;
+  padding: 0 15px;
+  background-color: #eeeefb;
+}
+/* line 39, ../sass/partials/_base.scss */
+.intro .intro-image {
+  display: none;
+}
+/* line 43, ../sass/partials/_base.scss */
+.intro .intro-content {
+  padding: 15px 0;
+  max-width: 325px;
+}
+
+/* line 49, ../sass/partials/_base.scss */
+.section-title {
+  display: inline-block;
+  margin: 20px 0;
+  font: 32px/32px "HelveticaNeueLTPro-ThEx", sans-serif;
+  color: #093500;
+}
+/* line 55, ../sass/partials/_base.scss */
+.section-title span {
+  font-weight: bold;
+}
+
+/* line 60, ../sass/partials/_base.scss */
+.article-title {
+  margin-bottom: 18px;
+}
+/* line 63, ../sass/partials/_base.scss */
+.article-title a {
+  font: 400 20px/22px "Myriad Pro", sans-serif;
+  color: #093500;
+}
+
+/* line 70, ../sass/partials/_base.scss */
+.first-line {
+  display: block;
+  color: #80a60f;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* line 77, ../sass/partials/_base.scss */
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+/* line 83, ../sass/partials/_base.scss */
+.left-side {
+  padding: 18px 0;
+}
+
+/* line 89, ../sass/partials/_base.scss */
+.right-side article {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 5px 15px;
+}
+/* line 95, ../sass/partials/_base.scss */
+.right-side article:first-child {
+  border-bottom: 1px solid #eeeefb;
+}
+/* line 99, ../sass/partials/_base.scss */
+.right-side p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 440px) {
+  /* line 106, ../sass/partials/_base.scss */
+  .right-side .article {
+    flex-direction: row;
+  }
+  /* line 109, ../sass/partials/_base.scss */
+  .right-side .article-image {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 600px) {
+  /* line 116, ../sass/partials/_base.scss */
+  .articles {
+    flex-direction: row;
+  }
+
+  /* line 119, ../sass/partials/_base.scss */
+  .left-side {
+    position: relative;
+    padding: 18px 27px 18px 12px;
+    width: 35%;
+  }
+  /* line 124, ../sass/partials/_base.scss */
+  .left-side:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 30px;
+    height: 80%;
+    width: 1px;
+    border-right: 1px solid #eeeefb;
+  }
+
+  /* line 135, ../sass/partials/_base.scss */
+  .right-side {
+    padding: 0 5px 0 15px;
+    width: 65%;
+  }
+
+  /* line 140, ../sass/partials/_base.scss */
+  .intro {
+    padding: 0;
+  }
+  /* line 142, ../sass/partials/_base.scss */
+  .intro .intro-image {
+    display: block;
+  }
+
+  /* line 147, ../sass/partials/_base.scss */
+  .section-title {
+    margin-left: -45px;
+  }
+}
+/* line 1, ../sass/partials/_header.scss */
+.logo {
+  background: linear-gradient(#769715, #99cc01);
+  padding: 0 15px;
+}
+/* line 5, ../sass/partials/_header.scss */
+.logo a {
+  font: 32px/80px "HelveticaNeueLTPro-ThEx", sans-serif;
+  color: white;
+}
+/* line 9, ../sass/partials/_header.scss */
+.logo a:hover {
+  text-decoration: none;
+}
+/* line 13, ../sass/partials/_header.scss */
+.logo a span {
+  font-weight: 700;
+}
+@media screen and (min-width: 678px) {
+  /* line 1, ../sass/partials/_header.scss */
+  .logo {
+    padding-left: 35px;
+  }
+  /* line 21, ../sass/partials/_header.scss */
+  .logo h1 {
+    line-height: 80px;
+  }
+}
+
+/* line 30, ../sass/partials/_header.scss */
+.header-navigation ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 0;
+}
+/* line 40, ../sass/partials/_header.scss */
+.header-navigation li a {
+  padding: 0 24px;
+  font: 400 20px/32px "Myriad Pro", sans-serif;
+  color: #093500;
+}
+/* line 45, ../sass/partials/_header.scss */
+.header-navigation li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 690px) {
+  /* line 55, ../sass/partials/_header.scss */
+  .header-navigation ul {
+    flex-direction: row;
+  }
+  /* line 58, ../sass/partials/_header.scss */
+  .header-navigation ul li:last-child:after {
+    display: none;
+  }
+  /* line 61, ../sass/partials/_header.scss */
+  .header-navigation ul li:after {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/icon.png") no-repeat;
+  }
+}
+/* line 1, ../sass/partials/_footer.scss */
+.footer {
+  padding: 27px;
+  font: 10px/20px "Tahoma", sans-serif;
+  border-top: 6px solid #eeeefb;
+}

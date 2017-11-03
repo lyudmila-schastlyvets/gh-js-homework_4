@@ -1,0 +1,71 @@
+.logo {
+  background: linear-gradient(#769715, #99cc01);
+  padding: 0 15px;
+
+  a {
+    font: 32px/80px "HelveticaNeueLTPro-ThEx", sans-serif;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  @media screen and (min-width: 678px) {
+    padding-left: 35px;
+
+    h1 {
+      line-height: 80px;
+    }
+  }
+
+}
+
+.header-navigation {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0;
+  }
+
+  li {
+
+    a {
+      padding: 0 24px;
+      font: 400 20px/32px "Myriad Pro", sans-serif;
+      color: #093500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 690px) {
+  .header-navigation {
+    ul {
+      flex-direction: row;
+      li {
+        &:last-child:after {
+          display: none;
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          background: url("../images/icon.png") no-repeat;
+        }
+      }
+    }
+  }
+}

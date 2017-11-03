@@ -1,0 +1,36 @@
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "HelveticaNeueLTPro-ThEx"; */
+@font-face {
+  font-family: 'HelveticaNeueLTPro-ThEx';
+  src: url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.eot');
+  src: url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.woff2') format('woff2'),
+  url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.woff') format('woff'),
+  url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.ttf') format('truetype'),
+  url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.svg#HelveticaNeueLTPro-ThEx') format('svg'),
+  url('../fonts/Helvetica/HelveticaNeueLTPro-ThEx.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "HelveticaNeueLTPro-BdEx"; */
+@font-face {
+  font-family: 'HelveticaNeueLTPro-BdEx';
+  src: url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.eot');
+  src: url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.woff2') format('woff2'),
+  url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.woff') format('woff'),
+  url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.ttf') format('truetype'),
+  url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.svg#HelveticaNeueLTPro-BdEx') format('svg'),
+  url('../fonts/Helvetica bold/HelveticaNeueLTPro-BdEx.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

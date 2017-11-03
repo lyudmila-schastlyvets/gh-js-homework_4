@@ -1,0 +1,150 @@
+/*
+* main styles
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 15px;
+  font: 400 10px/14px "Tahoma", sans-serif;
+  color: #093500;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.read-more {
+  display: block;
+  width: 30px;
+  height: 10px;
+  background: url("../images/arrow.png") no-repeat;
+}
+
+.wrapper {
+  max-width: 675px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  padding: 0 15px;
+  background-color: #eeeefb;
+
+  .intro-image {
+    display: none;
+  }
+
+  .intro-content {
+    padding: 15px 0;
+    max-width: 325px;
+  }
+}
+
+.section-title {
+  display: inline-block;
+  margin: 20px 0;
+  font: 32px/32px "HelveticaNeueLTPro-ThEx", sans-serif;
+  color: #093500;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.article-title {
+  margin-bottom: 18px;
+
+  a {
+
+    font: 400 20px/22px "Myriad Pro", sans-serif;
+    color: #093500;
+  }
+}
+
+.first-line {
+  display: block;
+  color: #80a60f;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.left-side {
+  padding: 18px 0;
+}
+
+.right-side {
+
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 5px 15px;
+  }
+
+  article:first-child {
+    border-bottom: 1px solid #eeeefb;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 440px) {
+  .right-side {
+    .article {
+      flex-direction: row;
+    }
+    .article-image {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .articles {
+    flex-direction: row;
+  }
+  .left-side {
+    position: relative;
+    padding: 18px 27px 18px 12px;
+    width: 35%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 30px;
+      height: 80%;
+      width: 1px;
+      border-right: 1px solid #eeeefb;
+    }
+  }
+
+  .right-side {
+    padding: 0 5px 0 15px;
+    width: 65%;
+  }
+
+  .intro {
+    padding: 0;
+    .intro-image {
+      display: block;
+    }
+  }
+
+  .section-title {
+    margin-left: -45px;
+  }
+}
