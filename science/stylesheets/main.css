@@ -84,7 +84,7 @@ a:hover {
   display: block;
   width: 30px;
   height: 10px;
-  background: url("../images/arrow.png") no-repeat;
+  background: url("../science/images/arrow.png") no-repeat;
 }
 
 /* line 29, ../sass/partials/_base.scss */
@@ -282,7 +282,7 @@ a:hover {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background: url("../images/icon.png") no-repeat;
+    background: url("../science/images/icon.png") no-repeat;
   }
 }
 /* line 1, ../sass/partials/_footer.scss */
